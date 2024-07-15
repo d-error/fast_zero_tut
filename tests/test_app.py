@@ -43,9 +43,9 @@ def test_read_single_user(client):
     response = client.get('/users/1')
     assert response.status_code == HTTPStatus.OK
     assert response.json() == {
-                'username': 'alice',
-                'email': 'alice@example.com',
-                'id': 1,
+        'username': 'alice',
+        'email': 'alice@example.com',
+        'id': 1,
     }
 
 
